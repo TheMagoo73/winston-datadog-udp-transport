@@ -2,3 +2,5 @@
 
 # winston-datadog-udp-transport
 ### Simple logging using UDP and the DataDog agent
+
+## Installation
