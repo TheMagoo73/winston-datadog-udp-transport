@@ -38,6 +38,9 @@ jobs:
       # run tests!
       - run: npm test
 
+      # run lcov coverage
+      - run: npm run report-coverage
+
       # store test results
       - store_test_results:
           path: test_results
