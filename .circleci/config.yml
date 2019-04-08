@@ -37,7 +37,7 @@ jobs:
       - run: npm test
 
       # store test results
-      - store_test_results
+      - store_test_results:
           path: test_results
 
       # store code coverage
