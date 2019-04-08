@@ -38,8 +38,8 @@ jobs:
 
       # store test results
       - store_test_results
-        path: test_results
+          path: test_results
 
       # store code coverage
       - store_artifacts:
-        path: .nyc_output
+          path: .nyc_output
