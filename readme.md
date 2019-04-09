@@ -15,7 +15,7 @@ npm install --save winston-datadog-udp-transport
 
 ### Basic setup
 
-```jscript
+```javascript
 const winston = require('winston');
 const udpTransport = require('');
 const ddUdpTransport = new udpTransport({
