@@ -1,6 +1,6 @@
 {
   "name": "winston-datadog-udp-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winston transport for logging to DataDog using UDP to send logging to the DD agent",
   "main": "index.js",
   "scripts": {

@@ -28,3 +28,5 @@ const logger = new winston.Logger({
     ]
 });
 ```
+
+**Note** The transport uses `localhost` and `10518` as defaults, so for a standard configuration of the agent you don't need to supply any values in the constructor call.
