@@ -32,7 +32,7 @@ describe("datadog-udp-transport", () => {
     })
 
     it("can ship logs with sensible defaults", (done)=> {
-        t = new transport({}).log("Hello World", () => {
+        t = new transport({}).log({level: "info", message: "Hello World"}, () => {
             sendStub.should.be.calledOnce
             sendStub.args[0][0].should.deep.equal(Buffer.from("Hello World"))
             sendStub.args[0][3].should.equal(10518)
@@ -46,7 +46,7 @@ describe("datadog-udp-transport", () => {
         t = new transport({
             host: "10.38.0.1",
             port: 22
-        }).log("Hello World", () => {
+        }).log({level: "info", message: "Hello World"}, () => {
             sendStub.should.be.calledOnce
             sendStub.args[0][0].should.deep.equal(Buffer.from("Hello World"))
             sendStub.args[0][3].should.equal(22)
@@ -55,5 +55,4 @@ describe("datadog-udp-transport", () => {
             done()
         })
     })
-
 })
